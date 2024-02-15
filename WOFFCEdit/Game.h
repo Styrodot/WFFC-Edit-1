@@ -11,6 +11,7 @@
 #include "DisplayChunk.h"
 #include "ChunkObject.h"
 #include "InputCommands.h"
+#include "Camera.h"
 #include <vector>
 
 
@@ -73,6 +74,9 @@ private:
 	float								m_movespeed;
 
 	//camera
+	Camera* m_camera;
+
+
 	DirectX::SimpleMath::Vector3		m_camPosition;
 	DirectX::SimpleMath::Vector3		m_camOrientation;
 	DirectX::SimpleMath::Vector3		m_camLookAt;
