@@ -34,5 +34,6 @@ public:
 
 
 	DirectX::SimpleMath::Matrix GetView();
+	DirectX::SimpleMath::Vector3 GetCameraPos();
 };
 

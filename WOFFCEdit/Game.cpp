@@ -232,6 +232,9 @@ void Game::Update(DX::StepTimer const& timer)
 // Draws the scene.
 void Game::Render()
 {
+
+	m_view = m_camera->GetView();
+	m_camPosition = m_camera->GetCameraPos();
     // Don't try to render anything before the first Update.
     if (m_timer.GetFrameCount() == 0)
     {

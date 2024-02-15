@@ -100,3 +100,8 @@ DirectX::SimpleMath::Matrix Camera::GetView()
 	return m_view;
 }
 
+DirectX::SimpleMath::Vector3 Camera::GetCameraPos()
+{
+	return m_camPosition;
+}
+
